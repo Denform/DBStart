@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp">
+
+    <EditText
+        android:id="@+id/inputName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Name"
+        android:visibility="gone"
+        tools:visibility="gone"></EditText>
+
+    <EditText
+        android:id="@+id/inputDepartment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Department"
+        android:visibility="gone"
+        tools:visibility="gone"></EditText>
+
+    <EditText
+        android:id="@+id/inputSalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Salary"
+        android:visibility="gone"
+        tools:visibility="gone"></EditText>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/addedData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:visibility="gone"
+            tools:visibility="gone"></Button>
+
+        <Button
+            android:id="@+id/readData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show"
+            android:visibility="gone"
+            tools:visibility="gone"></Button>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></Space>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="36dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_bg"
+            app:srcCompat="@android:drawable/ic_menu_search" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></Space>
+
+        <EditText
+            android:id="@+id/searchName"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:textColor="@color/purple_500"
+            android:textColorHint="@color/purple_500"
+            android:gravity="center"
+            android:hint="Name"></EditText>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></Space>
+
+        <ImageButton
+            android:id="@+id/Added"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/bt_bg"
+            android:visibility="visible"
+            app:srcCompat="@android:drawable/ic_menu_add" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.5"></Space>
+
+        <ImageButton
+            android:id="@+id/clearData"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/bt_bg"
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+            android:text="-"
+            tools:ignore="MissingClass"></ImageButton>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></Space>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/purple_500"
+        android:text="Sort by" />
+
+    <RadioGroup
+        android:id="@+id/sort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.5"></Space>
+
+        <RadioButton
+            android:id="@+id/sortId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textColor="@drawable/selector"
+            android:text="Name ↑"
+            android:theme="@style/RadioButtonStyle"
+            android:textColorLink="@color/purple_500"></RadioButton>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.5"></Space>
+
+        <RadioButton
+            android:id="@+id/sortDepart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@drawable/selector"
+            android:theme="@style/RadioButtonStyle"
+            android:text="Depart ↑"></RadioButton>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.5"></Space>
+
+        <RadioButton
+            android:id="@+id/sortSalary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@drawable/selector"
+            android:theme="@style/RadioButtonStyle"
+            android:text="Salary ↑"></RadioButton>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.5"></Space>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Id"
+        android:visibility="gone"
+        tools:visibility="gone"></EditText>
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/imageButton"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:srcCompat="@android:drawable/ic_menu_add" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.5" >
+        </Space>
+
+        <Button
+            android:id="@+id/updateData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:visibility="gone"
+            tools:visibility="gone"></Button>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.5" >
+        </Space>
+
+        <Button
+            android:id="@+id/deleteData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:visibility="gone"
+            tools:visibility="gone"></Button>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.5" >
+        </Space>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:ignore="MissingConstraints"></ListView>
+
+</LinearLayout>
